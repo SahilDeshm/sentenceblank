@@ -15,7 +15,7 @@ function QuestionScreen() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('https://sentenceblank-3.onrender.com');
+        const response = await fetch('https://sentenceblank-3.onrender.com/data');
         const data = await response.json();
         setQuestions(data.questions);
         setLoading(false);
